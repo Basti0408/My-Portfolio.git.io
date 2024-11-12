@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects & Skills</a></li>
+            <li><a href="#hire">Contact</a></li>
+        </ul>
+        <!-- Hamburger icon for mobile -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <section class="home-section" id="home">
+        <div id="welcomeMessage">
+            <h2 class="home-section-title" id="homeId">Welcome to My Portfolio</h2>
+            <p>Hello! I’m a third-year Computer Science student driven by a passion for coding and continuous learning.</p>
+            <p>I enjoy exploring new technologies and building my skills. Feel free to connect and learn more about me!</p>
+            <button class="intro-btn" onclick="showIntro()">Click to Continue</button>
+        </div>
+    
+        <!-- Introduction Section -->
+        <div id="introMessage" class="hidden">
+            <img src="images/9089376a-9cf0-4fb2-8b8f-7c76c94a9c18.jpg" alt="Your Image" class="profile-photo">
+            <h2 class="introGreet">Greetings, I am Basti Candava!</h2>
+            <p class="typing-text">
+                <!-- This sentence will type out dynamically -->
+                <span id="typedText"></span>
+            </p>
+            <button class="intro-btn" onclick="showWelcome()">Back</button>
+            <button class="intro-btn" onclick="showAboutMe()">About me ⇩</button>
+        </div>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="info-container">
+            <div class="info-box">
+                <h2>BACKGROUND</h2>
+                <p>My full name is Christopher Sebastian B. Candava, but you can call me Basti. I am a 20 year-old third-year Computer Science student at Cavite State University - Bacoor Campus. While I initially set my sights on engineering, I didn’t quite achieve the grades necessary to pursue that path. As a result, I turned to Computer Science, and to my surprise, I found a new passion for the field. As I began to learn more about the field, I discovered its vast potential and quickly grew to appreciate the endless possibilities it offers. I am excited to continue developing my skills and knowledge in the ever-evolving world of technology.</p>
+            </div>
+            <div class="info-box">
+                <h2>INTEREST</h2>
+                <p>As I’m just starting out in coding, I’m motivated to learn and understand different concepts and languages, aiming to build a strong foundation for future projects. I’m especially interested in finding practical ways to apply what I learn. Outside of tech, I enjoy playing sports, chess, online games, and solving math equations. I lso like to read different books of different genres, mainly manga or anything new that interests me,  which helps me stay focused, inspired and motivated.</p>
+            </div>
+            <div class="info-box">
+                <h2>GOALS</h2>
+                <p>My primary goal for now is to complete my Computer Science degree and graduate, learning, growing, and gaining a solid understanding of the field and preparing for future opportunities. After graduation, I plan to gain hands-on experience in the field, taking a measured approach to growth and development. I’m focused on learning continuously and steadily building my career, one step at a time.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects & Skills Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects & Skills</h2>
+    
+    <!-- Project Message -->
+        <div class="project-message">
+            <h3>Projects</h3>
+            <p>Currently, I don’t have projects displayed on this portfolio, but I am actively building my skills and plan to add examples of my work in the future. Stay connected as I continue to grow and develop projects that showcase my abilities!</p>
+        </div>
+    
+    <!-- Skills Section -->
+        <div class="skills-container">
+            <h3>Skills</h3>
+        
+        <!-- Programming Skills -->
+            <div class="skills-category">
+                <h4>Programming Skills</h4>
+                <ul>
+                    <li>Familiar with fundamental programming concepts and languages such as [list programming languages you've practiced, e.g., Python, JavaScript].</li>
+                    <li>Knowledgeable in web development basics, including HTML, CSS, and JavaScript, with a goal of expanding into full-stack development over time.</li>
+                    <li>Eager to expand my knowledge in software development and explore frameworks and tools in the field.</li>
+                    <li>Focused on writing clean, effective code and continuously improving my understanding of software development.</li>
+                <!-- Add other programming skills here -->
+                </ul>
+            </div>
+        
+        <!-- Other Skills -->
+            <div class="skills-category">
+                <h4>Other Skills</h4>
+                <ul>
+                    <li>I have strong problem-solving abilities and a solid foundation in mathematics, which I apply effectively in programming and analytical tasks.</li>
+                    <li>I communicate ideas clearly and work well in team environments, skills I’ve strengthened through group projects and collaborative coursework.</li>
+                    <li>I’m adaptable and eager to learn, quickly embracing new tools and technologies to expand my skill set and stay prepared for industry challenges.</li>
+                    <li>I effectively manage my time, balancing academic responsibilities, personal projects, and extracurricular activities to stay organized and meet deadlines.</li>
+                <!-- Add other non-programming skills here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p class="intro-message">Thank you for visiting my portfolio! If you’d like to connect, collaborate, or have any questions, I’d be happy to hear from you. Whether it’s about my work, a potential project, or just a friendly chat, feel free to reach out. Let’s connect and explore new opportunities together!</p>
+            <p>Here's my contact information:</p>
+        
+            <!-- Contact Links -->
+            <div class="contact-links">
+                <a href="mailto:basticandava2004@gmail.com" target="_blank" class="contact-icon">
+                    <img src="images/Gmail_icon_(2020).svg" alt="Gmail">
+                    <p>Gmail</p>
+                </a>
+                <a href="https://www.facebook.com/basti.candava.73" target="_blank" class="contact-icon">
+                    <img src="images/facebook-3383596_960_720.webp" alt="Facebook">
+                    <p>Facebook</p>
+                </a>
+                <a href="tel:+639295272216" class="contact-icon">
+                    <img src="images/36641.png" alt="Phone">
+                    <p>Phone</p>
+                </a>
+            </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+    
+    <!-- Floating Button for scrolling to top -->
+<button class="scroll-to-top-btn" onclick="scrollToTop()">
+    ↑
+</button>
+<button class="scroll-to-down-btn" id="downButton">
+    ↓
+</button>
+</body>
+</html>

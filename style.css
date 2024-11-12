@@ -1,0 +1,449 @@
+/* Basic Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+/* Hide nav-links on mobile by default */
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    transition: transform 0.3s ease;
+}
+
+.nav-links li {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links li a {
+    font-size: 1.3rem;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+    /* Hide nav links initially and display hamburger icon */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Display hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Show the nav links when .open class is added */
+    .nav-links.open {
+        display: flex;
+    }
+}
+
+/* Full-Page Section Styling */
+section {
+    min-height: 100vh; /* Full page height */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-section-title {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+
+.home-section {
+    background-color: #f4f4f4;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-section p {
+    font-size: 1.5rem;
+}
+
+.introGreet {
+    font-size: 40px;
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Style for the section title */
+.about-section {
+    background-color: #e8e8e8;
+}
+
+#about {
+    display: block;
+    padding-top: 10px; /* Adds space at the top */
+    margin-top: 10px;
+}
+
+/* Style for the section title */
+.section-title {
+    text-align: center;
+    font-size: 50px;
+    margin: 0; /* Remove default margin */
+    padding-bottom: 5px; /* Space between title and info box */
+    color: #333;
+}
+
+.info-container {
+    display: flex; /* Enables horizontal layout */
+    justify-content: space-between; /* Distributes space between the boxes */
+    align-items: center;
+    gap: 10px; /* Adds space between the boxes */
+    flex-wrap: wrap; /* Makes the layout responsive on smaller screens */
+}
+
+/* Info box styling */
+.info-box {
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Internal padding */
+    margin: 20px auto; /* Centering and space around the box */
+    max-width: 600px; /* Limit width for readability */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Text styling within info box */
+.info-box p {
+    font-size: 16px;
+    color: #080808; /* Text color */
+    line-height: 1.6;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+    }
+    .info-box {
+        padding: 15px;
+    }
+    .info-box p {
+        font-size: 14px;
+    }
+}
+
+.projects-section {
+    display: block;
+    background-color: #dcdcdc;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: left; 
+    padding-top: 20px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.project-message h3 {
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+}
+
+.project-message p {
+    font-size: 1.4rem;
+    color: #0d0c0c; /* Subtle color for a professional look */
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    text-align: left;
+}
+
+.skills-container h3 {
+    font-size: 1.7rem;
+}
+
+/* Skills category titles */
+.skills-category h4 {
+    font-size: 1.3rem;
+    color: #0f0f0f;
+    padding-left: 60px;
+    margin-bottom: 10px;
+}
+
+/* Skills list */
+.skills-category ul {
+    list-style-type: disc;
+    padding-left: 100px; /* Increases indentation for bullets */
+    padding-bottom: 20px;
+    margin-left: 0; /* Aligns with the title */
+}
+
+.skills-category li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    #projects-skills {
+        padding: 15px;
+    }
+}
+
+.contact-section {
+    background-color: #f0f0f0;
+    display: block;
+}
+
+/* Contact Section */
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative; /* Make sure absolute positioning works */
+    min-height: 350px; /* Ensure the section has enough height */
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+/* Title Style */
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Intro Message */
+.intro-message {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #080808;
+}
+
+/* Paragraph under Intro */
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Contact Links Container */
+.contact-links {
+    position: absolute;
+    bottom: 20px; /* Position the links at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the icons horizontally */
+    display: flex;
+    gap: 30px;
+}
+
+/* Style for Contact Icons */
+.contact-icon img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px;
+        height: 450px;
+    }
+    #contact h2 {
+        font-size: 2rem;
+    }
+    .contact-links {
+        gap: 20px;
+        justify-content: center;
+    }
+    .contact-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+/* Home Section Specific Styling */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.intro-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-photo {
+    width: 100%; /* Sets image width to 100% of its container */
+    max-width: 300px; /* Limits the maximum width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Example: Make it a circle */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+/* Desktop adjustments */
+@media (min-width: 768px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .intro-btn, .profile-photo {
+        margin-top: 20px;
+    }
+}
+
+/* Floating button style */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #666;
+    color: white;
+    border: 5px;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-down-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #666;
+    color: white;
+    border: 5px;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the button */
+.scroll-to-top-btn:hover {
+    background-color: #666;
+    transform: translateY(-5px); /* Slightly raise the button on hover */
+}
+
+.scroll-to-down-btn:hover {
+    background-color: #666;
+    transform: translateY(-5px); /* Slightly raise the button on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    .scroll-to-top-btn {
+        display: none; /* Hides the button on screens smaller than 600px */
+    }
+}
+
+@media (max-width: 768px) {
+    #downButton {
+        display: none;
+    }
+}
+
+
